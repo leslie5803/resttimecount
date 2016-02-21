@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>demo</title>
+</head>
+<body>
+	<div class="top_box">
+		<div class="line">
+			<label>手机号：</label>
+			<input type="text" placeholder="请输入手机号码" class="tel" />
+			<button type="button" id="sendCaptcha">发送验证码</button>
+		</div>
+	</div>
+<script type="text/javascript" src="./count.js"></script>
+<script type="text/javascript">
+	Rest('sendCaptcha',{
+		time:6,
+		disabled:false,
+		callback:function(){ 
+			console.log('t');
+		}
+	});
+</script>
+</body>
+</html>
